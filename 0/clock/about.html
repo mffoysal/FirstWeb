@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MF Foys@L</title>
+    <link rel="stylesheet" href=".css">
+    <style>
+
+        *{
+    margin: 0;
+    padding: 0px;
+}
+
+body{
+    background-image: url(3.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   
+    
+}
+div{
+    background-color: tomato;
+    width: 550px;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 200px;
+    border-radius: 50%;
+    transition: 10s;
+    padding-top: 100px;
+    opacity: 1;
+    animation-name: mff;
+    animation-duration: 10s;
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+
+}
+div:hover{
+    transform: rotate(60deg);
+    background-color: aqua;
+    opacity: 1;
+
+}
+img{
+    max-width: 300px;
+    height: 300px;
+    border: 37px solid black;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: px;
+    transition: 10s;
+    animation-name: mf;
+    animation-duration: 6s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+img:hover{
+    border: 17px solid red;
+    transform: scale(1.5, 1.5);
+
+}
+
+@keyframes mf{
+    from {
+        max-width: 300px;
+    }
+    to {
+        max-width: 320px;
+    }
+    0% {
+        border-color: black;
+        top: 0;
+    }
+    25%{
+        border-color: chartreuse;
+        top: 100px;
+
+    }
+    50%{
+        border-color: crimson;
+        top: 50px;
+        left: px;
+        opacity: 0.9;
+    }
+    75%{
+        border-color: darkblue;
+        right: px;
+    }
+    90%{
+        border-color: teal;
+        top: -90px;
+       
+    }    
+    100%{
+        top: 0;
+    }
+}
+
+@keyframes mff{
+    0%{
+
+    }
+    50%{
+        transform: rotate(35deg);
+        background-color: teal;
+        border-radius: 30%;
+    }
+    70%{
+        transform: rotate(-35deg);
+        background-color: violet;
+        border-radius: 15%;
+        opacity: 0.8;
+    }
+    100%{
+        border-radius: 50%;
+        
+
+    }
+}
+
+    </style>
+</head>
+<body>
+        
+    <div><img src="about.jpg" alt=""></div>
+
+
+</body>
+</html>

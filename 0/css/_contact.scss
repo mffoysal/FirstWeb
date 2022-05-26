@@ -1,0 +1,86 @@
+.contact {
+  width: 100vw;
+  height: 100%;
+  padding: 4rem 5rem;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #32425030, #6d80a21f);
+  display: none;
+  backdrop-filter: blur(10px);
+  .content {
+    position: relative;
+    border-radius: 13px;
+    width: 100%;
+    height: 100%;
+    background: url("../Image/contact-pic.jpg") #1b1b1b;
+    background-size: $contactBackWidth 100%;
+    background-repeat: no-repeat;
+    // padding-top: 3rem;
+  }
+  .fa-times {
+    font-size: 1.2rem;
+    position: absolute;
+    padding: 0.5rem;
+    right: 1rem;
+    top: 0.9rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  .form {
+    margin-left: $contactBackWidth;
+    padding: 3rem;
+    height: 100%;
+    @include flex(center, flex-start);
+    flex-flow: column;
+    color: #fff;
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+  .fiverr {
+    margin: 1rem 0 2rem 0;
+    @include flex(center);
+    padding: 1rem 3rem;
+    flex-flow: column;
+    height: 300px;
+    border: 4px solid #4e4e4e;
+    background: #252525;
+    border-radius: 10px;
+    // box-shadow: 0 0 10px #dadada;
+    a {
+      color: #fff;
+      background: linear-gradient(180deg, #1bbb14 0%, #1e6922 100%);
+      display: inline-block;
+      padding: 5px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    p {
+      // color: black;
+      margin-bottom: 1rem;
+    }
+    img {
+      object-fit: contain;
+      width: 4rem;
+      border-radius: 50px;
+      margin-top: 1.2rem;
+      margin-top: 1.2rem;
+      border: 1px solid #dadada;
+      margin-bottom: 10px;
+      box-shadow: 0 0 30px -11px #c5c5c5db;
+    }
+    .stars {
+      @include flex(center);
+      margin: 7px 0 1.5rem 0;
+      i {
+        color: gold;
+      }
+      span {
+        margin-left: 8px;
+      }
+    }
+  }
+}

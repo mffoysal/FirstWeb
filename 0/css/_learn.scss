@@ -1,0 +1,27 @@
+.learn {
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 1rem;
+  @include flex();
+  flex-wrap: wrap;
+  .cont {
+    width: 300px;
+    //  background: violet;
+    text-align: left;
+    padding: 10px;
+    flex-flow: column;
+  }
+  .fab {
+    color: red;
+    font-size: 2rem;
+    margin: auto;
+  }
+  h1 {
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 6px;
+  }
+  p {
+    text-align: justify;
+  }
+}

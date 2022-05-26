@@ -1,0 +1,206 @@
+body{
+    background-color: rgb(245, 240, 240);
+    
+}
+
+.container1{
+    background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%));
+    color: #fa0b7a;
+    font-size: 20px;
+    width: auto;
+    height: 350px;
+    border: 2px solid black;
+    overflow: scroll;
+    margin: 0 auto;
+
+    
+
+}
+
+.th{
+    border: 1px solid rgb(6, 14, 0);
+    background-color: chartreuse;
+    padding: 3px;
+}
+   
+.btn{
+    background-color: chocolate;
+    color: black;
+    text-decoration: none;
+    border: 1px solid red;
+    margin-bottom: 5px;
+}
+
+.container{
+    background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%));
+    width: 75%;
+    position: relative;
+    margin: 10px auto;
+    padding-left: 35px;
+}
+
+h1{text-align: center;
+    margin-left:-40px;
+}
+
+label{
+    display: block; 
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(241, 16, 8);
+}
+input, textarea {
+    width:90%;
+    padding: 10px 2%;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: aqua; 
+    margin-bottom: 10px;
+}
+select{
+    width: 94%;
+}
+
+textarea{
+    min-height: 100px;
+}
+input[type="submit"]{
+    background-color: aqua;
+    color: red;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+input[type="reset"]{
+    background-color: aqua;
+    color: red;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+input[type="submit"]:hover{
+    background-color: red;
+    color: white;
+}
+input[type="reset"]:hover{
+    background-color: yellow;
+    color: white;
+}
+input[type="radio"]{
+    display: inline-block;
+    width: 30px;
+    padding: 0;
+    margin-bottom: 0;
+}
+#gender{
+    margin-bottom: 0;
+    padding: 0;
+    width: px;
+    display: inline-block;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+    width: 30px;
+}
+#edu{
+    display: inline-block;
+}
+
+input[type="search"]{
+    width: 40%;
+}
+#search-btn{
+    background-color: red;
+    color: white;
+    width: 80px;
+    height: auto;
+    padding: 5px;
+    margin: 0 auto;
+}
+.sub{
+    position: relative;
+    margin: 0px auto;
+    width: 200px;
+}
+
+
+
+.h{
+    margin: 0;
+    overflow: hidden;
+}
+
+.mf{
+    background-color: rgb(85, 248, 79);
+    border: 1px solid springgreen;
+    border-radius: 10px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.mff{
+    background-color: skyblue;
+    color: cornsilk;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.typing{
+    color: red;
+    width: auto;
+    float: left;
+    font: 1em sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: typing 4s steps(30) 1s infinite alternate;
+    overflow: hidden;
+    margin: 0 auto;
+    display: show;
+
+
+}
+
+.typed{
+    color: aqua;
+
+}    
+.crow{
+    float: left;
+    color: white;
+    font-size: 25px;
+    animation: crow 0.4s steps(15) 0s  infinite;
+    font-weight: bold;
+    
+}
+div.form-group p{
+    color: yellow;
+    text-align: center;
+    font-size: 25px;
+}
+
+@keyframes typing{
+    0%{
+        width: 0ch;
+    }
+ 
+    100%{
+        width: 55ch;
+    }
+
+}
+
+@keyframes crow{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+  
+}
+

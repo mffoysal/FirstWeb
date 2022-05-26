@@ -1,0 +1,201 @@
+@media (max-width: 1024px) {
+  .header {
+    .leftSide {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+  * p:not(.skillCont p) {
+    font-size: 0.8rem;
+  }
+  #skills .libraries {
+    padding: 2rem 5.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  * a {
+    font-size: 0.8rem;
+  }
+  .preview {
+    .fa-times-circle {
+      top: 8rem;
+      right: 2rem;
+    }
+  }
+  nav {
+    @include flex();
+  }
+  .mainBody {
+    margin-left: 0px;
+  }
+  .sideBar {
+    display: none;
+  }
+  .header {
+    .leftSide {
+      h1 {
+        font-size: 2rem;
+        .welcome {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .righSide {
+    img {
+      width: 11rem;
+    }
+  }
+  #skills {
+    .skillGrp {
+      .skillCont {
+        margin: 1.5rem;
+      }
+    }
+  }
+  #works {
+    .gallary {
+      span {
+        width: 220px;
+        height: 135px;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  #about {
+    padding: 1rem;
+    min-height: 400px;
+    .aboutLeft {
+      padding: 2rem;
+    }
+  }
+  nav {
+    .links {
+      transition: 200ms;
+      z-index: 50;
+      position: fixed;
+      flex-flow: column;
+      top: -120%;
+      left: 0%;
+      width: 100vw;
+      height: 100%;
+      backdrop-filter: blur(20px);
+      background: rgba($color: #000000, $alpha: 0.4);
+      a {
+        font-size: 1.1rem;
+      }
+      p {
+        display: inline-block;
+      }
+    }
+    .fas {
+      display: inline-block;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  * {
+    font-size: 85%;
+  }
+  .preview {
+    img {
+      width: 86%;
+    }
+  }
+  .header {
+    padding: 1rem;
+    .leftSide {
+      width: 90%;
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+    .righSide {
+      display: none;
+    }
+  }
+  #about {
+    br {
+      display: none;
+    }
+    .content {
+      flex-flow: column;
+    }
+    .aboutLeft {
+      text-align: center;
+      img {
+        width: 50%;
+      }
+    }
+    .aboutRight {
+      text-align: center;
+
+      h3:not(span) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  #skills {
+    .skillGrp {
+      padding: 2rem 1rem;
+      justify-content: space-between;
+      .skillCont {
+        width: 115px;
+        height: 150px;
+      }
+    }
+  }
+  #works {
+    .gallary {
+      justify-content: space-between;
+      padding: 0 15px;
+      span {
+        margin: 1rem 0;
+        width: 185px;
+        height: 105px;
+      }
+    }
+  }
+
+  .contact {
+    padding: 3rem;
+    .content {
+      background: #1b1b1b;
+    }
+    .form {
+      margin: 0;
+      padding: 1rem;
+    }
+    .fiverr {
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  #works .gallary span {
+    width: 155px;
+    height: 85px;
+  }
+}
+@media (max-width: 320px) {
+  #skills .skillGrp {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  #works {
+    .gallary {
+      padding: 0 5px;
+      span {
+        width: 145px;
+      }
+    }
+  }
+}

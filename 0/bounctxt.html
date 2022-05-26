@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BouncTxt</title>
+    <link rel="stylesheet" href="css/bounc.css">
+    <link rel="stylesheet" href="css/bounc.js">
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js">
+</head>
+<body>
+    
+<div>
+
+    <div class="letter">
+        <div class="word a">F</div>
+        <div class="word b">A</div>
+        <div class="word c">R</div>
+        <div class="word d">H</div>
+        <div class="word e">A</div>
+        <div class="word f">D</div>
+        <div class="word g">F</div>
+        <div class="word h">O</div>
+        <div class="word i">Y</div>
+        <div class="word j">S</div>
+        <div class="word k">A</div>
+        <div class="word l">L</div>
+    </div>
+<!-- heart start -->
+    <!-- <div class="heart">
+        <h1>I <3 you <br>.FMNF.</h1>
+    </div> -->
+<!-- heart end -->
+<!-- circular progress bar -->
+     <div class="wrapper text-center">
+        <div class="container preload text-center chart" data-size="400" data-value="88" data-arrow="up"></div>
+    </div>
+
+
+<!-- animated progress bar -->
+    <div class="container  preload text-center">
+        <svg width="300" hieght="300" viewBox="0 0 300 300">
+            <defs>
+                <linearGradient id="Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#e100ff" />
+                    <stop offset="100%" stop-color="#009fff" />
+                </linearGradient>
+            </defs>
+
+            <circle class="stat" cx="150" cy="150" r="100" />
+            <circle class="load" cx="150" cy="150" r="100" transform="rotate(-90 150 150)" />
+            <text class="num" stroke-width="3" x="150" y="55%" text-anchor="middle">Hi....</text>
+        </svg>
+    </div>
+
+</div>
+
+<script>
+
+    Let text = document.querySelector(".num");
+    Let load = document.querySelector(".load");
+
+    Let numToText = 1;
+
+    Let time = setInterval(function(){
+        numToText += 1;
+        text.textContent = numToText + "%";
+
+        if(numToText === 100) {
+            clearInterval(time);
+            load.style.fillOpacity = 1;
+            text.style.fill = "#fff";
+            text.style.fontSize = "30px";
+            text.textContent = "Completed";
+            text.textLength = "105";
+        }
+    },200);
+</script>
+</body>
+</html>

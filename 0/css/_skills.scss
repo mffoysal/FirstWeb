@@ -1,0 +1,55 @@
+#skills {
+  margin-top: 1rem;
+  h1 {
+    font-size: $headSize;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  h1 + p {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: $fontColor;
+  }
+  .subHead {
+    color: $fontColor;
+    font-size: 1.5rem;
+  }
+  .highlight {
+    text-align: center;
+    color: $fontColor;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+  .skillGrp {
+    @include flex(center);
+    padding: 2rem 5.7rem;
+    flex-wrap: wrap;
+    .skillCont {
+      width: 140px;
+      position: relative;
+      height: 140px;
+      @include flex(center);
+      flex-flow: column;
+      margin: 2.3rem;
+      h2,
+      p {
+        color: $fontColor;
+        text-transform: uppercase;
+      }
+      h2 {
+        font-size: 1.9rem;
+      }
+      div {
+        position: absolute;
+      }
+    }
+  }
+  .libraries {
+    padding: 2rem 10rem;
+  }
+  .nodeJS {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}

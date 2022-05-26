@@ -1,0 +1,300 @@
+.body{
+    background: ghostwhite;
+    margin: 0;
+    box-sizing: border-box;
+}
+#seab{
+    display:none;
+    background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%));
+}
+#sea:hover #seab{
+    display:inline;
+}
+
+
+
+
+/* bounce start */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     background: ghostwhite;
+    /* overflow: hidden; */
+
+}
+
+.letter{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.letter .word{
+    width: 100%;
+    font-weight: 800;
+    font-family: sans-serif;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top: 9vh;
+    
+}
+
+.a , .c , .e , .g , .i , .k{
+    animation: anim1 3s cubic-bezier(0.5, 0.05, 1, 0.5) alternate infinite;
+    color: red;
+}
+
+
+
+
+.b , .d , .f , .h , .j , .l{
+    animation: anim2 3s cubic-bezier(0.5, 0.05, 1, 0.5) alternate infinite;
+
+}
+
+@keyframes anim1{
+    from{
+    
+    }
+    to{
+        transform: translateY(90vh) rotate(720deg);
+    }
+}
+
+@keyframes anim2{
+    from{
+        
+    }
+    to{
+        transform: translateY(90vh) rotate(-700deg);
+    }
+}
+
+
+/* heart */
+
+
+.heart{
+    background-color: crimson;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    animation: heartbeat 1.25s infinite;
+
+}
+
+.heart::before , .heart::after{
+    content: "";
+    background-color: crimson;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    animation: pulse 1.25s infinite;
+
+
+}
+.heart::before{
+    top: -100px;
+    left: 0;
+
+}
+.heart::after{
+    top: 0;
+    left: 100px;
+
+}
+
+@keyframes heartbeat{
+    0%{
+        transform: scale(1), rotate(-45deg);
+    }
+    10%{
+        transform: scale(1.25), rotate(-45deg);
+        background-color: rgb(7, 226, 255);
+    }
+    100%{
+        transform: scale(1), rotate(-45deg);
+
+    }
+}
+@keyframes pulse{
+    0%{
+       
+    }
+    10%{
+    
+        background-color: rgb(8, 220, 248);
+    }
+    100%{
+        
+
+    }
+}
+
+.hearth1{
+    margin-top: 140px;
+    transform: rotate(45deg);
+    margin-left: -10px;
+    color: crimson;
+}
+
+
+
+/* heart end */
+
+
+/* circular progress bar */
+.wrapper{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+
+}
+.preload{
+    flex: 1;
+    padding: 0 20px;
+}
+
+/* animated progress bar */
+.preload{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.stat{
+    stroke: #ccc;
+    stroke-width: 14;
+    fill: transparent;
+}
+.load{
+    fill: url(#Gradient);
+    stroke: url(#Gradient);
+    fill-opacity: 0;
+    stroke-width: 14;
+    stroke-dasharray: 628;
+    stroke-linecap: round;
+    transition: fill-opacity 0.5s linear;
+    animation: load 5s linear;
+}
+.num{
+    font-size: 30px;
+    fill: url(#Gradient);
+    font-family: poppins;
+    font-weight: 600;
+    text-transform: Uppercase;
+}
+@keyframes load{
+    0%{
+        stroke-dashoffset: 638;
+    }
+    20%{
+        stroke-dashoffset: 502.4;
+    }
+    40%{
+        stroke-dashoffset: 376.8;
+    }
+    60%{
+        stroke-dashoffset: 251.2;
+
+    }
+    80%{
+        stroke-dashoffset: 125.6;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+/* animation text start */
+
+
+
+.head1{
+    font-family: sans-serif;
+    font-size: 15px;
+    color: rgb(212, 26, 10);
+    width: 0ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: head1 10s steps(50) infinite alternate;
+    border-right: 2px solid black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@keyframes head1{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0ch;
+    }
+}
+.head2div{
+    margin-left:  15%;
+    text-align: center;
+}
+div .head2{
+    position: absolute;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    font-size: 18px;
+    background: linear-gradient(rgb(255, 45, 17), rgb(56, 5, 5), rgb(255, 43, 6), rgb(6, 7, 1), rgb(34, 255, 71));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: head2 8s steps(50)  infinite; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    
+    
+}
+#content:hover div>.head2{
+    background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%));
+
+    position: absolute;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    font-size: 18px;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: head2 8s steps(50)  infinite; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+   
+}
+@keyframes head2{
+    0%{
+        background-position: -500%;
+    }
+    100%{
+        background-position: 500%;
+    }
+}
+
+
+
+/* animation text end */

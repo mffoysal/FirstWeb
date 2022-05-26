@@ -1,0 +1,58 @@
+#about {
+  max-width: 900px;
+  margin: auto;
+  padding: 3rem 1rem 1rem 2rem;
+  min-height: 520px;
+  .content {
+    @include flex();
+  }
+  .topContent {
+    margin-bottom: 1rem;
+    h1 {
+      color: #fff;
+      text-align: center;
+      font-size: $headSize;
+    }
+    p {
+      color: $fontColor;
+      margin-top: 0.6rem;
+      text-align: center;
+    }
+  }
+  .aboutLeft {
+    min-width: 40%;
+    padding: 3.4rem;
+    img {
+      border-radius: 10px;
+      width: 100%;
+    }
+  }
+  .aboutRight {
+    min-width: 60%;
+    h3:not(span) {
+      font-size: 1.6rem;
+      color: #fff;
+      text-transform: none;
+      letter-spacing: 1.5px;
+      margin-bottom: 0.9rem;
+      span {
+        color: red;
+      }
+    }
+    p {
+      color: $fontColor;
+      span {
+        color: rgba(255, 0, 0, 0.76);
+      }
+    }
+    a {
+      display: inline-block;
+      background: red;
+      color: #fff;
+      padding: 10px 20px;
+      margin-top: 1.4rem;
+      border-radius: 50px;
+      text-decoration: none;
+    }
+  }
+}

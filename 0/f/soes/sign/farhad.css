@@ -1,0 +1,126 @@
+
+.container1{
+    background: linear-gradient(to right, hsl(200, 100%, 50%), hsl(175, 100%, 50%));
+    color: #f57e0e;
+    font-size: 20px;
+    width: auto;
+    height: 350px;
+    border: 2px solid black;
+    overflow: scroll;
+    margin: 0 auto;
+
+    
+
+}
+
+.th{
+    border: 1px solid rgb(6, 14, 0);
+    background-color: chartreuse;
+    padding: 3px;
+}
+   
+.btn{
+    background-color: chocolate;
+    color: black;
+    text-decoration: none;
+    border: 1px solid red;
+    margin-bottom: 5px;
+}
+
+.container{
+    background-color: teal;
+    width: 75%;
+    position: relative;
+    margin: 10px auto;
+    padding-left: 35px;
+}
+
+h1{text-align: center;
+    margin-left:-40px;
+}
+
+label{
+    display: block; 
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: salmon;
+}
+input, textarea {
+    width:90%;
+    padding: 10px 2%;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: aqua; 
+    margin-bottom: 10px;
+}
+select{
+    width: 94%;
+}
+
+textarea{
+    min-height: 100px;
+}
+input[type="submit"]{
+    background-color: aqua;
+    color: red;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+input[type="reset"]{
+    background-color: aqua;
+    color: red;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+input[type="submit"]:hover{
+    background-color: red;
+    color: white;
+}
+input[type="reset"]:hover{
+    background-color: yellow;
+    color: white;
+}
+input[type="radio"]{
+    display: inline-block;
+    width: 30px;
+    padding: 0;
+    margin-bottom: 0;
+}
+#gender{
+    margin-bottom: 0;
+    padding: 0;
+    width: px;
+    display: inline-block;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+    width: 30px;
+}
+#edu{
+    display: inline-block;
+}
+
+input[type="search"]{
+    width: 40%;
+}
+#search-btn{
+    background-color: red;
+    color: white;
+    width: 80px;
+    height: auto;
+    padding: 5px;
+}
+.sub{
+    position: relative;
+    margin: 0px auto;
+    width: 200px;
+}
+ div.form-group p{
+    color: yellow;
+    text-align: center;
+}

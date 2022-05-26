@@ -1,0 +1,32 @@
+#works {
+  margin-top: 3rem;
+  h1 {
+    color: #fff;
+    font-size: $headSize;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0 2rem 4rem 2rem;
+  }
+  .gallary {
+    @include flex(space-around);
+    flex-wrap: wrap;
+  }
+  span {
+    margin: 2rem 1rem;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      transition: 120ms;
+      height: 100%;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

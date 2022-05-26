@@ -1,0 +1,109 @@
+@mixin flex($just: space-between, $align: center) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
+}
+@import "loading";
+@import "variables";
+@import "sideBar";
+@import "header";
+@import "contact";
+@import "about";
+@import "skills";
+@import "works";
+@import "learn";
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+* {
+  // font-family: "Mukta", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+* p {
+  color: $fontColor;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background: $mainBodyBack;
+}
+
+.underline {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 0.3rem;
+    background: red;
+    top: 90%;
+  }
+}
+
+.notice {
+  position: fixed;
+  z-index: 1000;
+  color: #fff;
+  font-weight: 200;
+  display: none;
+  background: #3d4354b8;
+  bottom: 1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 50px;
+}
+// up arrow
+.up {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  cursor: pointer;
+  z-index: 50;
+  .fa-arrow-up {
+    display: none;
+    border-radius: 5px;
+    padding: 1rem;
+    opacity: 0.6;
+    background: #ff0000;
+    transition: 100ms;
+    color: #fff;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+// gallary
+
+.preview {
+  @include flex(center);
+  position: fixed;
+  z-index: 49;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  flex-flow: column-reverse;
+  background: rgba($color: #000000, $alpha: 0.5);
+  img {
+    width: 70%;
+  }
+  i {
+    color: #fff;
+    position: fixed;
+    right: 4rem;
+    top: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+@import "mediaQuery";

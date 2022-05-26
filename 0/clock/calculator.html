@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MF practice</title>
+    <!-- <link rel="stylesheet" href="calculator.css"> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0px;
+}
+
+
+h1{
+    text-align: center;
+}
+.calculator{
+    text-align: center;
+    margin: 0 auto;
+   
+    max-width: 400px;
+    margin-top: 10px;
+    transition: 0.4s;
+    font-size: 0;
+    border: 2px solid teal;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.4);  
+}
+
+.calculator:hover{
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.6);
+}
+
+.calculate1{
+    background-color: black;
+}
+
+#result{
+    width: 385px;
+    height: 100px;
+    font-size: 50px;
+    text-align: right;
+    letter-spacing: 4px;
+    padding: 0 5px;
+    border: 3px solid teal;
+    border-radius: 30px;
+    background-color: turquoise;
+}
+
+.btn{
+    background-color: black;
+    color: blanchedalmond;
+    width: 100px;
+    height: 70px;
+    font-size: 35px;
+}
+.btn:hover{
+    background-color: teal;
+}
+
+.btnside{
+    background-color: rgb(15, 240, 64);
+}
+
+.btnside:hover{
+    background-color: aqua;
+}
+.equal{
+    background-color: red;
+}
+
+
+.equal:hover{
+    background-color:  yellow;
+}
+
+    </style>
+</head>
+<body>
+    <!-- <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/app.js"></script> -->
+<h1>Calculator</h1>
+
+<div class="calculator">
+    <div class="calculate1">
+        <input type="text" id="result" maxlength="12">
+    </div>
+    <div class="calculate2">
+        <div class="calculate3">
+            <input type="button" class="btn" value="C" onclick="clearResult()">
+            <input type="button" class="btn" value="+/-" onclick="insertNumber('+/-')">
+            <input type="button" class="btn" value="%" onclick="insertNumber('%')">
+            <input type="button" class="btn btnside" value="/" onclick="insertNumber('/')">
+        </div> 
+        <div class="calculate3">
+            <input type="button" class="btn" value="7" onclick="insertNumber(7)">
+            <input type="button" class="btn" value="8" onclick="insertNumber(8)">
+            <input type="button" class="btn" value="9" onclick="insertNumber(9)">
+            <input type="button" class="btn btnside" value="x" onclick="insertNumber('*')">
+        </div>
+        <div class="calculate3">
+            <input type="button" class="btn" value="4" onclick="insertNumber(4)">
+            <input type="button" class="btn" value="5" onclick="insertNumber(5)">
+            <input type="button" class="btn" value="6" onclick="insertNumber(6)">
+            <input type="button" class="btn btnside" value="-" onclick="insertNumber('-')">
+        </div>
+        <div class="calculate3">
+            <input type="button" class="btn" value="1" onclick="insertNumber(1)">
+            <input type="button" class="btn" value="2" onclick="insertNumber(2)">
+            <input type="button" class="btn" value="3" onclick="insertNumber(3)">
+            <input type="button" class="btn btnside" value="+" onclick="insertNumber('+')">
+        </div>
+        <div class="calculate3">
+            <input type="button" class="btn" value="0" onclick="insertNumber(0)">
+            <input type="button" class="btn" value="." onclick="insertNumber('.')">
+            <input type="button" class="btn" value="DEL" onclick="deleteNumber()">
+            <input type="button" class="btn equal" value="=" onclick="calculate('=')">
+        </div>
+</div>
+
+
+
+<!-- <script src="jq/jquery-3.6.0.min.js"></script> -->
+<script src="index.js"></script>
+<script>
+    
+var resultField = $("#result")
+
+function insertNumber(number){
+    var existingNumber = resultField.val();
+
+
+    resultField.val(existingNumber + number)
+}
+
+function clearResult(){
+    resultField.val('')
+}
+
+function calculate(){
+    var result = eval(resultField.val())
+    resultField.val(result) 
+}
+
+function deleteNumber(){
+    var presentvalue = resultField.val();
+    if(presentvalue!=''){
+        resultField.val(presentvalue.slice(0,-1));    
+    }
+}
+</script>
+</body>
+</html>
